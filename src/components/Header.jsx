@@ -11,7 +11,7 @@ const Header = () => {
         alt=""
       />
       <img
-        className="w-full absolute top-0  md:hidden"
+        className="min-w-full absolute top-0 left-0 md:hidden"
         src={headerMobileImg}
         alt=""
       />

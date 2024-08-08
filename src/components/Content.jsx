@@ -9,9 +9,6 @@ import LogoMicrosoft from "../assets/images/logo-microsoft.png";
 import LogoHP from "../assets/images/logo-hp.png";
 import LogoVectorGraph from "../assets/images/logo-vector-graphics.png";
 
-
-
-
 const features = [
   {
     title: "Quick Search",
@@ -32,54 +29,48 @@ const features = [
 const tools = [
   {
     img: ICONCreateBlacklist,
-    title:"Create blacklists",
+    title: "Create blacklists",
     description:
-    "Ensure sensitive information never makes its way to your clipboard by excluding certain sources.",
-    
+      "Ensure sensitive information never makes its way to your clipboard by excluding certain sources.",
   },
   {
-    img:ICONtext,
-    title:"Plain text snippets",
+    img: ICONtext,
+    title: "Plain text snippets",
     description:
-    "Remove unwanted formatting from copied text for a consistent look.",
+      "Remove unwanted formatting from copied text for a consistent look.",
   },
   {
-    img:ICONpreview,
-    title:"Sneak preview",
-    description:
-    "Quick preview of all snippets on your clip for easy access.",
+    img: ICONpreview,
+    title: "Sneak preview",
+    description: "Quick preview of all snippets on your clip for easy access.",
   },
 ];
 const companies = [
   {
-    id:1,
-    img:LogoGoogle,
-    
+    id: 1,
+    img: LogoGoogle,
   },
   {
-    id:2,
-    img:LogoIBM,
-    
+    id: 2,
+    img: LogoIBM,
   },
   {
-    id:3,
-    img:LogoMicrosoft,
-    
+    id: 3,
+    img: LogoMicrosoft,
   },
   {
-    id:4,
-    img:LogoHP,
+    id: 4,
+    img: LogoHP,
   },
   {
-    id:5,
-    img:LogoVectorGraph,
+    id: 5,
+    img: LogoVectorGraph,
   },
 ];
 
 const Content = () => {
   return (
-       
-      <div className="w-full"  >
+    <div className="w-full">
       <section className="max-w-[590px] w-[95%] mx-auto text-center pt-20 flex flex-col gap-4">
         <h2 className="font-semibold text-2xl text-gray-700">
           Keep track of your snippets
@@ -113,61 +104,62 @@ const Content = () => {
       </section>
 
       <section className="max-w-[590px] w-[95%] mx-auto text-center pt-20 flex flex-col gap-4">
-      <h2 className="font-semibold text-2xl text-gray-700">
+        <h2 className="font-semibold text-2xl text-gray-700">
           Keep track of your snippets
         </h2>
         <p className="text-gray-400">
-          Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.
+          Whether you&apos;re on the go, or at your computer, you can access all
+          your Clipboard snippets in a few simple clicks.
         </p>
         <section className="pt-10 flex flex-col lg:flex-row">
-        <div>
-          <img
-            className="max-w-full w-[90%] mx-auto"
-            src={imageComputerdevices}
-            alt=""
-          />
-        </div>
+          <div>
+            <img
+              className="max-w-full w-[90%] mx-auto"
+              src={imageComputerdevices}
+              alt=""
+            />
+          </div>
         </section>
 
-        
-      <section className="max-w-[590px] w-[95%] mx-auto text-center pt-20 flex flex-col gap-4">
-      <h2 className="font-semibold text-2xl text-gray-700">
-          Supercharge your workflow
-        </h2>
-        <p className="text-gray-400">
-         We've got the tools to boost your productivity.
-        </p>
-      </section>
-      <section className="max-w-[900px] w-[90%] mx-auto text-center pt-20 flex  flex-col gap-4 ">
-        <div className="max-w-[900px] pt-20 w-[80%]  flex  flex-col sm: flex-row gap-16 ">
-        
-          {tools.map((tool) => (
-            <div className="flex flex-col  items-center gap-4 w-[90%] mx-auto" key={tool.title}>
-              <img src={tool.img}  />
-              <h3 className="text-xl font-semibold text-gray-700 text-center sm:text-left">
-                {tool.title}
-              </h3>
-              <p className="text-gray-400 text-center sm:text-center min-w-[200px] ">
-                {tool.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-          <div className="max-w-[400px] pt-20 w-[80%]  flex justify-around flex-row sm: flex-col gap-16 ">
-          
-            {companies.map((company) => (
-              <div className="flex  flex-col items-center gap-4 w-[90%] mx-auto" key={company.id}>
-                <img src={company.img} className="min-w-[100px]" />
-                
+        <section className="max-w-[590px] w-[95%] mx-auto text-center pt-20 flex flex-col gap-4">
+          <h2 className="font-semibold text-2xl text-gray-700">
+            Supercharge your workflow
+          </h2>
+          <p className="text-gray-400">
+            We&apos;ve got the tools to boost your productivity.
+          </p>
+        </section>
+        <section className="max-w-[900px] w-[90%] mx-auto text-center pt-20 flex  flex-col gap-4 ">
+          <div className="max-w-[900px] pt-20 w-[80%]  flex  flex-col sm:flex-row gap-16 ">
+            {tools.map((tool) => (
+              <div
+                className="flex flex-col  items-center gap-4 w-[90%] mx-auto"
+                key={tool.title}
+              >
+                <img src={tool.img} />
+                <h3 className="text-xl font-semibold text-gray-700 text-center sm:text-left">
+                  {tool.title}
+                </h3>
+                <p className="text-gray-400 text-center sm:text-center min-w-[200px] ">
+                  {tool.description}
+                </p>
               </div>
             ))}
-            </div>
-        </section>  
-            
+          </div>
+
+          <div className="max-w-[900px] pt-20 w-[80%]  flex justify-around flex-col sm:flex-row gap-16 ">
+            {companies.map((company) => (
+              <div
+                className="flex  flex-col items-center gap-4 w-[90%] mx-auto"
+                key={company.id}
+              >
+                <img src={company.img} className="min-w-[100px]" />
+              </div>
+            ))}
+          </div>
+        </section>
       </section>
       <div className="flex flex-col justify-center items-center max-w-[590px] w-[95%] pt-20 mx-auto gap-6">
-        
         <section className="flex flex-col gap-8">
           <div className="flex flex-col gap-8">
             <p className="font-baiJamjuree text-3xl font-semibold text-gray-700 text-center">

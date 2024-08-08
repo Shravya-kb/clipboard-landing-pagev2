@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-baiJamjuree">
+    <div className="font-baiJamjuree flex flex-col gap-20">
       <Header />
       <Content />
       <Footer />
